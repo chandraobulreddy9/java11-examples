@@ -1,5 +1,7 @@
 pipeline {
-agent any
+agent {
+  label 'agentnode'
+}
  stages {
   stage('Create build output') {
    steps {
